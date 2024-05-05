@@ -5,8 +5,14 @@ void main() {
 
   num result = sum(a);
   print('this result value :' + result.toString());
+
+  print(min(number1: 4, number2: 3));
 }
 
-num sum(int price, [int discount = 10]) {
+num sum(int price, [int discount = 10, String? name]) {
   return price - price * discount ~/ 100;
+}
+
+num min({required num number1, num number2 = 0}) {
+  return number1 - number2;
 }
