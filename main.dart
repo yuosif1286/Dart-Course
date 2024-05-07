@@ -1,30 +1,29 @@
 import 'dart:async';
 
 void main() {
-  Human bedaa = Human();
+  Human bedaa = Human('bedaa ali', 150, 'black');
 
-  bedaa.name = 'bedaa ali';
-  bedaa.haierColor = 'black';
-  bedaa.height = 150;
-
-  Human yoyo = Human();
-  yoyo.name = 'yuosif raed';
-  yoyo.height = 173;
-  yoyo.haierColor = 'brown';
-
-  bedaa.PrintInformationHuman();
-  yoyo.PrintInformationHuman();
+  Human yoyo = Human('yuosif raed', 173, 'brown');
 }
 
 // objeect oriented programing
 
 class Human {
-  String? name;
-  int? height;
-  String? haierColor;
+  String? Name;
+  int? Height;
+  String? HaierColor;
+
+//constructer
+//default
+  Human(String? name, int? height, String? haierColor) {
+    this.Name = name;
+    this.Height = height;
+    this.HaierColor = haierColor;
+    this.PrintInformationHuman();
+  }
 
   void PrintInformationHuman() {
     print(
-        'my name is : ${name} my hight is : ${height} my heair Color is : ${haierColor}');
+        'my name is : ${Name} my hight is : ${Height} my heair Color is : ${HaierColor}');
   }
 }
