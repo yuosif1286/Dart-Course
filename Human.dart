@@ -12,9 +12,8 @@ class Human {
     if (num >= 0 && num <= 2) _numberOfArams = num;
   }
 
-  int GetNumberOfArams() {
-    return _numberOfArams;
-  }
+//Arrow Function
+  int GetNumberOfArams() => _numberOfArams;
 
 //constructer
 //default
