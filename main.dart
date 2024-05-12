@@ -6,7 +6,7 @@ void main() {
   Human bedaa = Human('bedaa ali', 150, 'black');
   bedaa.numberOfArams = 1;
 
-  print(bedaa.GetNumberOfArams());
+  print(bedaa.numberOfArams);
   Human yoyo = Human('yuosif raed', 173, 'brown');
-  print(yoyo.GetNumberOfArams());
+  print(yoyo.numberOfArams);
 }
