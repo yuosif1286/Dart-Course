@@ -7,8 +7,8 @@ class Human {
   // private
   int _numberOfArams = 2;
 
-  //Encapsulation
-  void SetNumberOfArams(int num) {
+  //setter
+  set numberOfArams(int num) {
     if (num >= 0 && num <= 2) _numberOfArams = num;
   }
 
