@@ -9,7 +9,7 @@ class Human {
 
   //Encapsulation
   void SetNumberOfArams(int num) {
-    if (num < 0 && num > 2) _numberOfArams = num;
+    if (num >= 0 && num <= 2) _numberOfArams = num;
   }
 
   int GetNumberOfArams() {
