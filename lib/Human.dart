@@ -16,11 +16,9 @@ class Human {
   int get numberOfArams => this._numberOfArams;
 //constructer
 //default
-  Human(String? name, int? height, String? haierColor) {
-    this.Name = name;
-    this.Height = height;
-    this.HaierColor = haierColor;
-  }
+
+// new way for set props in dart
+  Human(this.Name, this.Height, this.HaierColor);
 
   void PrintInformationHuman() {
     print(
