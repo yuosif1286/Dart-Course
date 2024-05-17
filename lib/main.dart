@@ -6,16 +6,21 @@ void main() {
   dog jac = dog(skinColor: 'black', airms: 4);
   jac.eat();
 
+// polymorphism
   List<Animals> zoo = [lolo, jac];
-  print(zoo);
 }
 
-// polymorphism
 class cat extends Animals {
   cat({required super.SkinColor, required super.Airms});
 
   void meo() {
     print('meo');
+  }
+
+  @override
+  eat() {
+    // TODO: implement eat
+    print('cat eating');
   }
 }
 
@@ -24,6 +29,12 @@ class lion extends Animals {
 
   void roar() {
     print('roar');
+  }
+
+  @override
+  eat() {
+    // TODO: implement eat
+    print('lion eating');
   }
 }
 
@@ -36,21 +47,19 @@ class dog extends Animals {
   }
 
   @override
-  void eat() {
-    print('eating meat');
+  eat() {
+    print('dog eating');
   }
 }
 
-class Animals {
+//Abstract
+abstract class Animals {
   String? SkinColor;
   double? Airms;
 
   Animals({required this.SkinColor, required this.Airms});
 
-  void eat() {
-    print('eating');
-  }
-
+  eat();
   void CanWalk() {
     print('WaLKING');
   }
