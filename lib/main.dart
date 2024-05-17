@@ -5,9 +5,12 @@ void main() {
   //object
   dog jac = dog(skinColor: 'black', airms: 4);
   jac.eat();
+
+  List<Animals> zoo = [lolo, jac];
+  print(zoo);
 }
 
-// Overid
+// polymorphism
 class cat extends Animals {
   cat({required super.SkinColor, required super.Airms});
 
